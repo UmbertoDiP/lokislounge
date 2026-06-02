@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags Ottimizzati -->
+    <title>Loki's Lounge S.r.l. | Investi nel 1° Pet Cafè a Tor San Lorenzo</title>
+    <meta name="title" content="Loki's Lounge S.r.l. | Investi nel 1° Pet Cafè a Tor San Lorenzo">
+    <meta name="description" content="Scopri Loki's Lounge ad Ardea (Tor San Lorenzo): l'innovativo Pet Social Club nato dall'amore per gli animali. Design in legno artigianale, boardgames e pensione.">
+    <meta name="keywords" content="Loki's Lounge, equity crowdfunding, pet cafe Roma Sud, pensione gatti Ardea, pet stop Tor San Lorenzo, bar giochi da tavolo, catio interno, toelettatura, Umberto Di Puorto">
+    <meta name="author" content="Umberto Di Puorto">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://www.lokislounge.it/">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "name": "Loki's Lounge S.r.l.",
+          "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1200&q=80",
+          "description": "Il primo Pet Cafè, Pensione e Social Club tra Ardea e Tor San Lorenzo.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ardea",
+            "addressRegion": "RM",
+            "postalCode": "00040",
+            "addressCountry": "IT"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Umberto Di Puorto"
+          },
+          "url": "https://www.lokislounge.it/"
+        },
+        {
+          "@type": "InvestmentOrDeposit",
+          "name": "Equity Crowdfunding Loki's Lounge",
+          "amount": {
+            "@type": "MonetaryAmount",
+            "currency": "EUR",
+            "value": "100000"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --bg-primary: #faf8f5;
+            --bg-surface: #ffffff;
+            --bg-card: #f3f0ea;
+            --text-main: #2d241e;
+            --text-muted: #6b5a4f;
+            --accent: #d97706;
+            --accent-hover: #b45309;
+            --accent-light: #fef3c7;
+            --success: #10b981;
+            --border-color: #e6dfd5;
+            --shadow: rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f1115;
+            --bg-surface: #161a22;
+            --bg-card: #1f242e;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent: #f59e0b;
+            --accent-hover: #d97706;
+            --accent-light: #334155;
+            --success: #34d399;
+            --border-color: #2d3748;
+            --shadow: rgba(0, 0, 0, 0.4);
+        }
+
+        /* Reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-primary); color: var(--text-main); line-height: 1.6; transition: var(--transition); }
+        a { color: var(--accent); text-decoration: none; transition: var(--transition); }
+        a:hover { color: var(--accent-hover); }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        img { max-width: 100%; height: auto; border-radius: 16px; display: block; }
+
+        /* Typography */
+        h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; color: var(--text-main); }
+        .text-center { text-align: center; }
+        .mb-8 { margin-bottom: 32px; }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 32px; border-radius: 10px; font-weight: 700; font-size: 16px; cursor: pointer; transition: var(--transition); border: none; text-align: center; letter-spacing: 0.3px; }
+        .btn-primary { background-color: var(--accent); color: #ffffff !important; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25); }
+        .btn-primary:hover { background-color: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(217, 119, 6, 0.35); }
+        .btn-secondary { background-color: var(--bg-surface); border: 2px solid var(--border-color); color: var(--text-main); }
+        .btn-secondary:hover { background-color: var(--bg-card); transform: translateY(-2px); }
+        
+        .badge { display: inline-block; background-color: var(--accent-light); color: var(--accent); padding: 8px 20px; border-radius: 50px; font-size: 14px; font-weight: 800; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(4px); }
+
+        /* Header */
+        header { background-color: rgba(var(--bg-surface-rgb), 0.95); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; transition: var(--transition); backdrop-filter: blur(12px); }
+        [data-theme="light"] header { background-color: rgba(255, 255, 255, 0.95); }
+        [data-theme="dark"] header { background-color: rgba(22, 26, 34, 0.95); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 76px; }
+        .logo { font-size: 24px; font-weight: 900; color: var(--accent); display: flex; align-items: center; gap: 10px; letter-spacing: -0.5px; }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a { color: var(--text-main); font-weight: 600; font-size: 15px; }
+        @media (max-width: 768px) { .nav-links { display: none; } }
+        
+        .theme-toggle-btn { background: var(--bg-card); border: 1px solid var(--border-color); padding: 8px 16px; border-radius: 30px; cursor: pointer; color: var(--text-main); display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; transition: var(--transition); }
+
+        /* Hero Section */
+        .hero { position: relative; padding: 120px 0; background: var(--bg-primary); border-bottom: 1px solid var(--border-color); overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; right: 0; width: 40%; height: 100%; background: url('https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=1000&q=80') center/cover; opacity: 0.15; mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)); }
+        [data-theme="dark"] .hero::before { opacity: 0.3; }
+        
+        .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 64px; align-items: center; position: relative; z-index: 2; }
+        @media (max-width: 992px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } .hero::before { width: 100%; mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)); opacity: 0.1; } }
+        
+        .hero h1 { font-size: clamp(40px, 5vw, 64px); margin-bottom: 24px; letter-spacing: -1.5px; }
+        .hero p { font-size: 20px; color: var(--text-muted); margin-bottom: 40px; max-width: 600px; line-height: 1.5; }
+
+        /* Funding Card */
+        .funding-card { background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 24px; padding: 48px; box-shadow: 0 30px 60px var(--shadow); position: relative; overflow: hidden; }
+        .funding-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: linear-gradient(90deg, var(--accent), var(--success)); }
+        
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; text-align: center; }
+        .stat-item h3 { font-size: 36px; color: var(--text-main); margin-bottom: 4px; letter-spacing: -1px; transition: all 0.5s ease; }
+        .stat-item span { font-size: 12px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; }
+        
+        .progress-container { margin-bottom: 32px; }
+        .progress-bar { width: 100%; height: 16px; background-color: var(--bg-card); border-radius: 20px; overflow: hidden; margin-bottom: 12px; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #f59e0b); width: 0%; border-radius: 20px; transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1); position: relative; }
+        .progress-labels { display: flex; justify-content: space-between; font-size: 14px; font-weight: 700; color: var(--text-muted); }
+
+        .valuation-box { background-color: var(--bg-primary); padding: 24px; border-radius: 16px; font-size: 14px; border: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .valuation-item { display: flex; flex-direction: column; gap: 4px; }
+        .valuation-label { color: var(--text-muted); font-size: 12px; text-transform: uppercase; font-weight: 700; }
+        .valuation-value { font-weight: 900; color: var(--text-main); font-size: 18px; }
+
+        /* Sections */
+        .section { padding: 100px 0; border-bottom: 1px solid var(--border-color); }
+        .section-title { text-align: center; margin-bottom: 64px; }
+        .section-title h2 { font-size: 44px; margin-bottom: 16px; letter-spacing: -1px; }
+        .section-title p { color: var(--text-muted); font-size: 18px; max-width: 800px; margin: 0 auto; }
+
+        /* Story & Concept Section */
+        .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 64px; }
+        @media (max-width: 768px) { .story-grid { grid-template-columns: 1fr; } }
+        .story-text h3 { font-size: 32px; margin-bottom: 20px; }
+        .story-text p { font-size: 16px; color: var(--text-muted); margin-bottom: 16px; }
+        
+        /* Masonry Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .gallery-item { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 20px var(--shadow); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 30px 20px 20px; color: white; transform: translateY(10px); opacity: 0; transition: all 0.3s ease; }
+        .gallery-item:hover .gallery-overlay { transform: translateY(0); opacity: 1; }
+        .gallery-overlay h4 { color: white; margin: 0; font-size: 18px; }
+        @media (max-width: 768px) { .gallery-grid { grid-template-columns: 1fr; } }
+
+        /* Grid Cards (Business Model) */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        @media (max-width: 768px) { .grid-3 { grid-template-columns: 1fr; } }
+        .card { background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 20px; padding: 40px; transition: var(--transition); height: 100%; box-shadow: 0 10px 30px var(--shadow); }
+        .card:hover { transform: translateY(-8px); border-color: var(--accent); }
+        .card-icon { font-size: 40px; margin-bottom: 24px; display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; background: var(--bg-primary); border-radius: 20px; color: var(--accent); }
+        .card h3 { font-size: 24px; margin-bottom: 16px; }
+
+        /* Tiers */
+        .tiers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; align-items: center; }
+        @media (max-width: 992px) { .tiers-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; align-items: stretch; } }
+        
+        .tier-card { background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 24px; padding: 48px 40px; text-align: center; display: flex; flex-direction: column; position: relative; transition: var(--transition); }
+        .tier-card:hover { border-color: var(--accent-light); box-shadow: 0 20px 40px var(--shadow); }
+        .tier-card.popular { border-color: var(--accent); border-width: 2px; transform: scale(1.05); z-index: 10; box-shadow: 0 30px 60px var(--shadow); padding: 56px 40px; }
+        @media (max-width: 992px) { .tier-card.popular { transform: none; padding: 48px 40px; } }
+        
+        .popular-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg, var(--accent), #f59e0b); color: white; padding: 6px 20px; border-radius: 30px; font-size: 12px; font-weight: 800; letter-spacing: 1px; white-space: nowrap; }
+        .tier-price { font-size: 56px; font-weight: 900; color: var(--text-main); margin: 24px 0; letter-spacing: -2px; }
+        .tier-features { list-style: none; margin: 32px 0 40px 0; flex-grow: 1; text-align: left; }
+        .tier-features li { padding: 12px 0; border-bottom: 1px solid var(--border-color); font-size: 15px; display: flex; align-items: flex-start; gap: 12px; color: var(--text-muted); }
+        .tier-features li strong { color: var(--text-main); }
+        .tier-features li::before { content: '✓'; color: var(--success); font-weight: 900; font-size: 16px; }
+        .tier-features li:last-child { border-bottom: none; }
+
+        /* Modal */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(8px); z-index: 2000; display: none; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; padding: 20px; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .checkout-modal { background-color: var(--bg-surface); width: 100%; max-width: 520px; border-radius: 24px; box-shadow: 0 40px 80px rgba(0,0,0,0.4); overflow: hidden; transform: translateY(20px) scale(0.95); transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .modal-overlay.active .checkout-modal { transform: translateY(0) scale(1); }
+        
+        .modal-header { padding: 24px 32px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background-color: var(--bg-surface); }
+        .modal-header h3 { font-size: 20px; margin: 0; }
+        .close-btn { background: var(--bg-card); border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 20px; cursor: pointer; color: var(--text-main); display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+        .close-btn:hover { background: var(--border-color); transform: rotate(90deg); }
+        
+        .modal-body { padding: 32px; max-height: calc(100vh - 120px); overflow-y: auto; }
+        .modal-amount-display { background: var(--bg-card); padding: 16px; border-radius: 16px; margin-bottom: 24px; text-align: center; border: 1px solid var(--border-color); }
+        
+        .stripe-input { width: 100%; padding: 16px; border: 1px solid var(--border-color); border-radius: 12px; background-color: var(--bg-primary); margin-bottom: 16px; font-size: 16px; color: var(--text-main); transition: var(--transition); font-family: inherit; }
+        .stripe-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-light); background-color: var(--bg-surface); }
+        .stripe-row { display: flex; gap: 16px; }
+        .form-label { display: block; font-size: 13px; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        .secure-badge { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--success); font-size: 13px; font-weight: 700; margin-top: 24px; background: rgba(16, 185, 129, 0.1); padding: 12px; border-radius: 8px; }
+        .loader { border: 3px solid var(--bg-card); border-top: 3px solid #ffffff; border-radius: 50%; width: 20px; height: 20px; animation: spin 1s linear infinite; display: inline-block; vertical-align: middle; margin-right: 8px; display: none; }
+        
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes scaleIn { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        @keyframes pulseSuccess { 0% { color: var(--text-main); } 50% { color: var(--success); transform: scale(1.05); } 100% { color: var(--text-main); } }
+        .highlight-success { animation: pulseSuccess 1s ease; }
+
+        footer { background-color: var(--bg-surface); border-top: 1px solid var(--border-color); padding: 64px 0 40px; text-align: center; color: var(--text-muted); font-size: 14px; }
+    </style>
+</head>
+<body data-theme="light">
+
+    <!-- Navigazione -->
+    <header>
+        <nav class="container nav-container" aria-label="Navigazione Principale">
+            <div class="logo">
+                <span aria-hidden="true">🐾</span> Loki's Lounge S.r.l.
+            </div>
+            <ul class="nav-links">
+                <li><a href="#concept">Il Concept</a></li>
+                <li><a href="#business">Il Business</a></li>
+                <li><a href="#investi">Investi Ora</a></li>
+            </ul>
+            <button class="theme-toggle-btn" id="themeToggle" aria-label="Cambia tema grafico">
+                <span id="themeIcon" aria-hidden="true">🌙</span> <span id="themeText">Dark Mode</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container hero-grid">
+                <div>
+                    <span class="badge">Campagna Equity Attiva</span>
+                    <h1 id="hero-heading">Il Pet Social Club prende vita a Roma Sud.</h1>
+                    <p>Acquisisci quote societarie della S.r.l. che rivoluzionerà il mondo del Pet Care ad Ardea e Tor San Lorenzo. Unisci la tua passione per gli animali a un solido rendimento finanziario.</p>
+                    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px;">
+                        <a href="#investi" class="btn btn-primary">Acquista Quote Ora</a>
+                        <a href="#concept" class="btn btn-secondary">Scopri il Concept</a>
+                    </div>
+                </div>
+                
+                <!-- Card Raccolta Fondi Dinamica -->
+                <article class="funding-card" aria-label="Stato attuale della raccolta fondi">
+                    <h2 class="mb-8 text-center" style="font-size: 24px;">Stato della Raccolta</h2>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item" id="raisedContainer">
+                            <h3 id="raisedAmount">€0</h3>
+                            <span>Raccolti</span>
+                        </div>
+                        <div class="stat-item" id="investorsContainer">
+                            <h3 id="investorsCount">0</h3>
+                            <span>Investitori</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>45</h3>
+                            <span>Giorni Rimasti</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-container" aria-hidden="true">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="mainProgress"></div>
+                        </div>
+                        <div class="progress-labels">
+                            <span id="progressPercent">0% dell'obiettivo</span>
+                            <span>Target: €100.000</span>
+                        </div>
+                    </div>
+
+                    <div class="valuation-box">
+                        <div class="valuation-item">
+                            <span class="valuation-label">Valutazione Pre-Money</span>
+                            <span class="valuation-value">€350.000</span>
+                        </div>
+                        <div class="valuation-item">
+                            <span class="valuation-label">Equity Offerta</span>
+                            <span class="valuation-value">28.5%</span>
+                        </div>
+                        <div class="valuation-item">
+                            <span class="valuation-label">Cippo Minimo</span>
+                            <span class="valuation-value">€500</span>
+                        </div>
+                        <div class="valuation-item">
+                            <span class="valuation-label">Tipo Società</span>
+                            <span class="valuation-value">S.r.l. Innovativa</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Concept & Galleria -->
+        <section class="section" id="concept" style="background-color: var(--bg-surface);" aria-labelledby="concept-heading">
+            <div class="container">
+                <header class="section-title">
+                    <h2 id="concept-heading">L'Anima di Loki's Lounge</h2>
+                    <p>Un progetto che unisce design artigianale, cura dei dettagli e amore per i nostri compagni di vita.</p>
+                </header>
+
+                <div class="story-grid">
+                    <div class="story-text">
+                        <h3>Nato da una passione reale</h3>
+                        <p>Loki's Lounge prende il nome dal nostro gatto, Loki, ed è stato concepito proprio per rispondere a un'esigenza che viviamo in prima persona: la mancanza di spazi di socializzazione dove poter portare i nostri pet in totale tranquillità a Tor San Lorenzo.</p>
+                        <p>L'intero locale riflette un'estetica unica e accogliente. Gli arredi, inclusi i comodi divanetti, sono realizzati artigianalmente recuperando legno di pallet, conferendo al locale un'impronta sostenibile e calda. Inoltre, abbiamo progettato un "catio" interno e percorsi a muro per garantire a gatti e piccoli cani uno spazio vitale sicuro ed esclusivo, separato dall'area food & boardgames.</p>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="Atmosfera calda e accogliente del locale" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Galleria Immagini Aggiornata -->
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Gatto che riposa in sicurezza" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Percorsi Sicuri & Catio</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <!-- Immagine Giochi da tavolo aggiornata e funzionante -->
+                        <img src="https://images.unsplash.com/photo-1632501641765-e568d28b0015?auto=format&fit=crop&w=600&q=80" alt="Giochi da tavolo al bar" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Boardgames & Social Club</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=600&q=80" alt="Cane in un locale accogliente" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Pet Stop & Pensione</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Model -->
+        <section class="section" id="business" aria-labelledby="business-heading">
+            <div class="container">
+                <header class="section-title">
+                    <h2 id="business-heading">Il Modello di Business</h2>
+                    <p>Un ecosistema studiato per abbattere i rischi e massimizzare i flussi di cassa (LTV).</p>
+                </header>
+                <div class="grid-3">
+                    <article class="card">
+                        <span class="card-icon" aria-hidden="true">🎯</span>
+                        <h3>Vantaggio Territoriale</h3>
+                        <p>Assenza di competitor diretti nella fascia tra Pomezia e Ardea per strutture ibride che integrano F&B e Pet Care di alta gamma.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon" aria-hidden="true">☕</span>
+                        <h3>Monetizzazione Ibrida</h3>
+                        <p>Oltre alle consumazioni al bar, l'LTV si alza grazie a tariffe orarie/giornaliere della pensione e al noleggio dei giochi da tavolo.</p>
+                    </article>
+                    <article class="card">
+                        <span class="card-icon" aria-hidden="true">✂️</span>
+                        <h3>Drop-off Toelettatura</h3>
+                        <p>Partnership locali per la toelettatura generano commissioni passive, mentre il cliente consuma nel lounge in attesa del proprio pet.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Piani di Investimento -->
+        <section class="section" id="investi" style="background-color: var(--bg-surface);" aria-labelledby="investi-heading">
+            <div class="container">
+                <header class="section-title">
+                    <h2 id="investi-heading">Piani di Sottoscrizione</h2>
+                    <p>Diventa socio oggi. Il pagamento iniziale funge da vincolo sicuro per l'ingresso nel capitale sociale della S.r.l.</p>
+                </header>
+
+                <div class="tiers-grid">
+                    <!-- Tier 1 -->
+                    <article class="tier-card">
+                        <h3>Seed Investor</h3>
+                        <div class="tier-price" aria-label="500 Euro">€ 500</div>
+                        <p style="color: var(--text-muted); font-size: 15px;">Il punto di ingresso perfetto per supportare il progetto locale.</p>
+                        <ul class="tier-features" aria-label="Vantaggi piano Seed Investor">
+                            <li><strong>0.18%</strong> di Quote Societarie S.r.l.</li>
+                            <li>Diritto di voto (Quote B)</li>
+                            <li>Tessera "Founder" con 10% sconto a vita</li>
+                            <li>Report finanziario trimestrale</li>
+                        </ul>
+                        <button class="btn btn-secondary invest-btn" data-amount="500" data-tier="Seed Investor" style="width: 100%;">Investi €500</button>
+                    </article>
+
+                    <!-- Tier 2 -->
+                    <article class="tier-card popular">
+                        <div class="popular-badge">PIÙ SCELTO DAGLI INVESTITORI</div>
+                        <h3>Angel Investor</h3>
+                        <div class="tier-price" style="color: var(--accent);" aria-label="2500 Euro">€ 2.500</div>
+                        <p style="color: var(--text-muted); font-size: 15px;">Per chi cerca un ottimo bilanciamento tra ROI e benefit VIP.</p>
+                        <ul class="tier-features" aria-label="Vantaggi piano Angel Investor">
+                            <li><strong>0.89%</strong> di Quote Societarie S.r.l.</li>
+                            <li>Diritto di voto (Quote B)</li>
+                            <li>Tessera "Gold" con 20% sconto a vita</li>
+                            <li>Accesso gratuito pensione (5 gg/anno)</li>
+                        </ul>
+                        <button class="btn btn-primary invest-btn" data-amount="2500" data-tier="Angel Investor" style="width: 100%; font-size: 18px; padding: 16px;">Investi €2.500</button>
+                    </article>
+
+                    <!-- Tier 3 -->
+                    <article class="tier-card">
+                        <h3>Main Partner</h3>
+                        <div class="tier-price" aria-label="10000 Euro">€ 10.000</div>
+                        <p style="color: var(--text-muted); font-size: 15px;">Per investitori strutturati che desiderano un asset solido.</p>
+                        <ul class="tier-features" aria-label="Vantaggi piano Main Partner">
+                            <li><strong>3.57%</strong> di Quote Societarie S.r.l.</li>
+                            <li>Quote Categoria A (Diritti Maggiorati)</li>
+                            <li>Accesso VIP illimitato al pet stop</li>
+                            <li>Logo aziendale esposto nel locale</li>
+                        </ul>
+                        <button class="btn btn-secondary invest-btn" data-amount="10000" data-tier="Main Partner" style="width: 100%;">Investi €10.000</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="Piè di pagina">
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 24px;">🐾 Loki's Lounge S.r.l.</div>
+            <p style="font-weight: 600; color: var(--text-main); margin-bottom: 8px;">Progettato per Ardea / Tor San Lorenzo</p>
+            <p style="font-size: 13px; max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                *Avvertenza Legale: L'investimento in startup e PMI comporta un alto rischio di perdita del capitale. Si consiglia di leggere il Business Plan completo prima di procedere. Landing page dotata di sistema API Mock per l'aggiornamento real-time dei fondi.
+            </p>
+            <p style="font-size: 12px; margin-top: 32px;">
+                Contatti Founder: <a href="mailto:dipuortoumberto@gmail.com">dipuortoumberto@gmail.com</a><br>
+                &copy; 2026 Loki's Lounge S.r.l. - Sviluppato da Umberto Di Puorto.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="checkout-modal">
+            <header class="modal-header">
+                <h3 id="modal-title">Sottoscrizione Quote Societarie</h3>
+                <button class="close-btn" id="closeModal" aria-label="Chiudi Finestra">&times;</button>
+            </header>
+            <div class="modal-body">
+                <div class="modal-amount-display">
+                    <p style="margin: 0; font-size: 15px; color: var(--text-muted);">Importo Investimento (<span id="modalTier" style="font-weight: 700; color: var(--text-main);"></span>)</p>
+                    <p id="modalAmount" style="margin: 4px 0 0 0; font-size: 32px; font-weight: 900; color: var(--accent);"></p>
+                </div>
+                
+                <form id="paymentForm">
+                    <fieldset style="border: none; margin-bottom: 24px; padding: 0;">
+                        <legend class="form-label">Dati Intestatario Quote</legend>
+                        <input type="text" class="stripe-input" id="userName" placeholder="Nome e Cognome" required aria-required="true">
+                        <input type="email" class="stripe-input" id="userEmail" placeholder="Indirizzo Email" required aria-required="true">
+                        <input type="text" class="stripe-input" id="userCF" placeholder="Codice Fiscale" required aria-required="true" style="text-transform: uppercase;">
+                    </fieldset>
+                    
+                    <fieldset style="border: none; margin-bottom: 24px; padding: 0;">
+                        <legend class="form-label">Dati di Pagamento</legend>
+                        <input type="text" class="stripe-input" placeholder="Numero Carta (0000 0000 0000 0000)" required aria-required="true" pattern="[0-9\s]{16,19}" maxlength="19">
+                        <div class="stripe-row">
+                            <input type="text" class="stripe-input" placeholder="MM/AA" required aria-required="true" style="flex: 1;" maxlength="5">
+                            <input type="text" class="stripe-input" placeholder="CVC" required aria-required="true" style="flex: 1;" maxlength="4">
+                        </div>
+                    </fieldset>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 18px; padding: 16px;" id="payButton">
+                        <span class="loader" id="payLoader" aria-hidden="true"></span>
+                        <span id="payText">Conferma e Paga</span>
+                    </button>
+                    
+                    <div class="secure-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        Transazione sicura e criptata
+                    </div>
+                </form>
+
+                <!-- Success State -->
+                <div id="successMessage" style="display: none; text-align: center; padding: 32px 0;">
+                    <div style="font-size: 64px; margin-bottom: 16px; animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);" aria-hidden="true">🎉</div>
+                    <h3 style="color: var(--success); margin-bottom: 16px; font-size: 24px;">Investimento Confermato!</h3>
+                    <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 32px;">Benvenuto tra i soci fondatori di Loki's Lounge S.r.l.! A breve riceverai un'email all'indirizzo indicato con la documentazione legale, il contratto e lo statuto.</p>
+                    <button class="btn btn-secondary" style="width: 100%;" onclick="closeModalFunc()">Torna alla Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Logic & State Management -->
+    <script>
+        // 1. Theme Configuration
+        const bodyElement = document.body;
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        
+        function toggleTheme() {
+            if (bodyElement.getAttribute('data-theme') === 'light') {
+                bodyElement.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                bodyElement.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            bodyElement.setAttribute('data-theme', 'dark');
+            themeIcon.textContent = '☀️';
+            themeText.textContent = 'Light Mode';
+        }
+
+        // 2. Crowdfunding Business Logic (Mock API & State)
+        const CampaignState = {
+            targetAmount: 100000, // Budget massimo adeguato per l'apertura locale
+            raisedAmount: parseInt(localStorage.getItem('loki_raised')) || 0, // Parte da 0 se non esiste in localStorage
+            investorsCount: parseInt(localStorage.getItem('loki_investors')) || 0,
+            
+            // Aggiorna l'interfaccia HTML con i dati correnti
+            updateUI: function(animate = false) {
+                const percent = Math.min((this.raisedAmount / this.targetAmount) * 100, 100);
+                
+                const raisedEl = document.getElementById('raisedAmount');
+                const investorsEl = document.getElementById('investorsCount');
+                
+                raisedEl.textContent = '€' + this.raisedAmount.toLocaleString('it-IT');
+                investorsEl.textContent = this.investorsCount;
+                
+                // Animazione barra
+                setTimeout(() => {
+                    document.getElementById('mainProgress').style.width = percent + '%';
+                    document.getElementById('progressPercent').textContent = percent.toFixed(1) + "% dell'obiettivo";
+                }, 100);
+
+                // Effetto visivo se un nuovo investimento è andato a buon fine
+                if (animate) {
+                    document.getElementById('raisedContainer').classList.add('highlight-success');
+                    document.getElementById('investorsContainer').classList.add('highlight-success');
+                    setTimeout(() => {
+                        document.getElementById('raisedContainer').classList.remove('highlight-success');
+                        document.getElementById('investorsContainer').classList.remove('highlight-success');
+                    }, 1000);
+                }
+            },
+
+            // Funzione asincrona che simula la chiamata REST /api/checkout
+            processInvestment: async function(amount, userData) {
+                return new Promise((resolve) => {
+                    // Simula ritardo di rete (2.5 secondi)
+                    setTimeout(() => {
+                        this.raisedAmount += amount;
+                        this.investorsCount += 1;
+                        
+                        // Salva nel database finto (localStorage del browser)
+                        localStorage.setItem('loki_raised', this.raisedAmount);
+                        localStorage.setItem('loki_investors', this.investorsCount);
+                        
+                        resolve({ success: true, transaction_id: 'txn_' + Date.now() });
+                    }, 2500);
+                });
+            }
+        };
+
+        // Inizializza l'interfaccia al caricamento della pagina
+        document.addEventListener('DOMContentLoaded', () => {
+            CampaignState.updateUI();
+        });
+
+        // 3. UI Modal Management
+        const modal = document.getElementById('checkoutModal');
+        const form = document.getElementById('paymentForm');
+        const successMsg = document.getElementById('successMessage');
+        const payBtn = document.getElementById('payButton');
+        const payText = document.getElementById('payText');
+        const payLoader = document.getElementById('payLoader');
+
+        let currentInvestAmount = 0;
+
+        function openModal(amount, tier) {
+            currentInvestAmount = parseInt(amount, 10);
+            document.getElementById('modalAmount').textContent = '€ ' + currentInvestAmount.toLocaleString('it-IT');
+            document.getElementById('modalTier').textContent = tier;
+            payText.textContent = 'Paga € ' + currentInvestAmount.toLocaleString('it-IT') + ' e Sottoscrivi';
+            
+            form.style.display = 'block';
+            successMsg.style.display = 'none';
+            form.reset();
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModalFunc() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            payLoader.style.display = 'none';
+            payBtn.disabled = false;
+        }
+
+        document.querySelectorAll('.invest-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                openModal(e.target.getAttribute('data-amount'), e.target.getAttribute('data-tier'));
+            });
+        });
+
+        document.getElementById('closeModal').addEventListener('click', closeModalFunc);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModalFunc(); });
+
+        // 4. Handle Form Submission (Checkout)
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // UX Caricamento
+            payText.textContent = 'Elaborazione transazione...';
+            payLoader.style.display = 'inline-block';
+            payBtn.disabled = true;
+            
+            const userData = {
+                name: document.getElementById('userName').value,
+                email: document.getElementById('userEmail').value,
+                cf: document.getElementById('userCF').value
+            };
+
+            // Esegue la Business Logic / API Call
+            const response = await CampaignState.processInvestment(currentInvestAmount, userData);
+            
+            if (response.success) {
+                // Aggiorna la pagina e mostra il successo
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
+                CampaignState.updateUI(true);
+                
+                // Ripristina stato bottone per futuri usi
+                payText.textContent = 'Conferma e Paga';
+                payLoader.style.display = 'none';
+                payBtn.disabled = false;
+            }
+        });
+
+        // Formattazione carte di credito (UX migliorata)
+        document.querySelectorAll('.stripe-input').forEach(input => {
+            input.addEventListener('input', function() {
+                if(this.placeholder.includes('Carta')) {
+                    this.value = this.value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim();
+                }
+                if(this.placeholder.includes('MM/AA')) {
+                    this.value = this.value.replace(/\D/g, '');
+                    if(this.value.length > 2) this.value = this.value.substring(0,2) + '/' + this.value.substring(2,4);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
